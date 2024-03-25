@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import plotly.express as px
-data_pre = pd.read_csv('../train_pre.csv')
+data_pre = pd.read_csv('./train_pre.csv')
 data_pre['Order_Date'] = pd.to_datetime(data_pre['Order_Date'])
 
 #=========================================================
@@ -13,7 +13,7 @@ data_pre['Order_Date'] = pd.to_datetime(data_pre['Order_Date'])
 #=========================================================
 st.header(' Marketplace - Visão Cliente')
 
-image_path = '../images/analysis.jpg'
+image_path = './images/analysis.jpg'
 image = Image.open(image_path)
 st.sidebar.image(image, width=120)
 
