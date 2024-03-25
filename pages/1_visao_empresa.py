@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 import plotly.express as px
 import streamlit_folium as st_folium
-data_pre = pd.read_csv('../train_pre.csv')
+data_pre = pd.read_csv('./train_pre.csv')
 data_pre['Order_Date'] = pd.to_datetime(data_pre['Order_Date'])
 
 st.set_page_config(
