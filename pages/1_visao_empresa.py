@@ -77,7 +77,7 @@ def order_by_day( data_pre ):
 #=========================================================
 st.header(' Marketplace - Visão Cliente')
 
-image_path = '../images/analysis.jpg'
+image_path = './images/analysis.jpg'
 image = Image.open(image_path)
 st.sidebar.image(image, width=120)
 
